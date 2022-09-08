@@ -41,11 +41,11 @@ function animation() {
     incrY = -incrY;
   }
 
-  if (circleX + radius <= canvas.width) {
+  if (circleX + radius < radius) {
     incrX++;
   }
 
-  if (circleY + radius <= canvas.height) {
+  if (circleY + radius < radius) {
     incrY++;
   }
 
