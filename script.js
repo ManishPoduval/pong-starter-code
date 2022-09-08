@@ -41,13 +41,13 @@ function animation() {
     incrY = -incrY;
   }
 
-  // if (circleX + radius <= canvas.width) {
-  //   incrX++;
-  // }
+  if (circleX + radius <= canvas.width) {
+    incrX++;
+  }
 
-  // if (circleY + radius <= canvas.height) {
-  //   incrY++;
-  // }
+  if (circleY + radius <= canvas.height) {
+    incrY++;
+  }
 
   intervalId = requestAnimationFrame(animation);
   if (gameOver) {
